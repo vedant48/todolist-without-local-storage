@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <title>todo</title>
+</head>
+<body>
+
+
+    <div class="p1">
+      <p>Vedant</p>
+    </div>
+
+    <div class="p2">
+      <p>Kumar</p>
+    </div>
+
+  <div class="wrapper">
+    
+    <h1>Todo</h1>
+    <h3>By Vedant</h3>
+    <div class="input">
+      <input id="todo" type="text" onkeyup="manage(this)" placeholder="Add what to do">
+      <button onclick="myFunction()" id="myBtn" type="submit" disabled value="Submit"><i class="fas fa-plus"></i></button>
+    </div>
+
+    <ul id="todoList">
+      <!-- data are comes from local storage -->
+    </ul>
+
+    <div class="footer">
+      <span><em>Click on list to remove</em></span>
+      <button onclick="myFunction1()" id="clearBtn">Clear All</button>
+    </div>
+  </div>
+ <script src="script.js"></script>
+  
+</body>
+</html>
